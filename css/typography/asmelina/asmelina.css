@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Asmelina Harley';
+    src: url('AsmelinaHarleyRegular.eot');
+    src: url('AsmelinaHarleyRegular.eot?#iefix') format('embedded-opentype'),
+        url('AsmelinaHarleyRegular.woff2') format('woff2'),
+        url('AsmelinaHarleyRegular.woff') format('woff'),
+        url('AsmelinaHarleyRegular.ttf') format('truetype'),
+        url('AsmelinaHarleyRegular.svg#AsmelinaHarleyRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

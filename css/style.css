@@ -1,0 +1,236 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+* {
+  max-width: 100%;
+  height: auto;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  background-image: url("../assets/images/kallie_pic4.png");
+  background-size: auto;
+  background-position: left top;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: clamp(3.6rem, 4vw, 6rem);
+}
+
+h2 {
+  font-size: clamp(3.6rem, 3vw, 4.8rem);
+}
+
+h3 {
+  font-size: clamp(2.8rem, 2.3vw, 3.6rem);
+}
+
+h4 {
+  font-size: clamp(1.8rem, 1.75vw, 2.8rem);
+}
+
+h5,
+h6,
+p,
+button,
+label,
+input,
+ul,
+li,
+a {
+  font-size: 1.6rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 900;
+}
+
+header {
+  text-align: center;
+  /* display: flex; */
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+#page {
+  width: 100%;
+  height: 100%;
+  padding: 4rem;
+}
+
+.page-title-cont {
+  width: 100%;
+  /* margin: auto; */
+  /* display: flex;
+  align-items: center;
+  justify-content: space-between; */
+}
+
+.page-title-cont h1 {
+  font-family: "Asmelina Harley";
+  margin: 4rem 0 4rem 15%;
+  color: red;
+  white-space: nowrap;
+}
+
+.page-sub-title-cont {
+  height: 25vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-sub-title-cont p {
+  font-size: clamp(1.8rem, 1.75vw, 2.8rem);
+  font-weight: 900;
+}
+
+.icon {
+  cursor: pointer;
+}
+
+.nav-menu-cont {
+  /* background-color: green; */
+  /* width: 100%; */
+  /* min-height: 100%;
+  max-height: 100%; */
+  /* position: absolute; */
+  /* top: 0; */
+  /* left: 0; */
+  /* text-align: center; */
+}
+
+.nav-cont {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+.nav-list {
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.nav-list a {
+  color: white;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-list a:hover {
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+.slide-down {
+  transition-property: height;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+  height: calc(100vh - 8rem);
+}
+
+.slide-up {
+  transition-property: height;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+  height: 0;
+}
+
+.up-arrow-icon {
+  display: none;
+}
+
+.up-arrow-icon-cont {
+  min-height: 4rem;
+  margin: 2rem;
+}
+
+/* .ham-menu-icon-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 4rem;
+  height: 4rem;
+  margin: 3rem;
+} */
+
+.ham-menu-icon-cont {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: right;
+}
+
+.hamburger-icon {
+  width: 3rem;
+  height: auto;
+  margin: 2rem;
+}
+
+@media screen and (min-width: 360px) {
+  .page-title-cont {
+    /* display: flex;
+    flex-direction: column; */
+  }
+
+  .appointment-btn-cont {
+    display: none;
+  }
+
+  .page-title-cont h1 {
+    /* margin: 4rem 0 4rem 25%; */
+  }
+}
