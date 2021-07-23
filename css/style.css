@@ -1,3 +1,17 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat);
+
+:root {
+  --clr-primary-red: rgb(150, 5, 5);
+  --clr-primary-white: rgb(255, 255, 255);
+  --clr-primary-black: rgb(0, 0, 0);
+  --clr-accent-gold: rgb(168, 143, 0);
+  --clr-accent-gray: rgb(94, 94, 94);
+
+  --ff-main: 'Montserrat';
+  --ff-accent: 'Asmelina Harley';
+}
+
+
 html {
   box-sizing: border-box;
   font-size: 62.5%;
@@ -15,6 +29,8 @@ html {
 }
 
 body {
+  font-family: var(--ff-main);
+  font-weight: 400;
   height: 100%;
   width: 100%;
   background-image: url("../assets/images/kallie_pic4.png");
@@ -38,19 +54,19 @@ a {
 }
 
 h1 {
-  font-size: clamp(3.6rem, 4vw, 6rem);
+  font-size: clamp(3.6rem, 4vw, 4.8rem);
 }
 
 h2 {
-  font-size: clamp(3.6rem, 3vw, 4.8rem);
+  font-size: clamp(3rem, 3vw, 3.6rem);
 }
 
 h3 {
-  font-size: clamp(2.8rem, 2.3vw, 3.6rem);
+  font-size: clamp(2.1rem, 2.3vw, 3rem);
 }
 
 h4 {
-  font-size: clamp(1.8rem, 1.75vw, 2.8rem);
+  font-size: clamp(1.6rem, 1.75vw, 2.1rem);
 }
 
 h5,
@@ -72,6 +88,7 @@ h4,
 h5,
 h6 {
   font-weight: 900;
+  line-height: 1.6;
 }
 
 header {
@@ -92,15 +109,27 @@ footer {
   left: 0;
 }
 
+.red {
+  color: var(--clr-primary-red);
+}
+
+.btn {
+  width: 10rem;
+  height: 3.2rem;
+  border-radius: 0.4rem;
+}
+
 #page {
   width: 100%;
-  height: 100%;
+  min-height: 100vh;
   padding: 4rem;
 }
 
 .page-title-cont {
   width: 100%;
-  /* margin: auto; */
+  display: flex;
+  justify-content: flex-end;
+  margin: 8rem 0 4rem 0;
   /* display: flex;
   align-items: center;
   justify-content: space-between; */
@@ -108,9 +137,9 @@ footer {
 
 .page-title-cont h1 {
   font-family: "Asmelina Harley";
-  margin: 4rem 0 4rem 15%;
-  color: red;
-  white-space: nowrap;
+  color: var(--clr-primary-red)
+  /* margin-left: 6rem; */
+  /* white-space: nowrap; */
 }
 
 .page-sub-title-cont {
@@ -118,11 +147,11 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  white-space: nowrap;
 }
 
 .page-sub-title-cont p {
   font-size: clamp(1.8rem, 1.75vw, 2.8rem);
-  font-weight: 900;
 }
 
 .icon {
@@ -174,6 +203,11 @@ footer {
   backdrop-filter: blur(10px);
 }
 
+.request-link:hover {
+  background: var(--clr-primary-red) !important;
+  backdrop-filter: blur(10px);
+}
+
 .slide-down {
   transition-property: height;
   transition-duration: 0.5s;
@@ -207,23 +241,41 @@ footer {
 } */
 
 .ham-menu-icon-cont {
-  position: absolute;
-  top: 0;
-  left: 0;
+  display: flex;
   width: 100%;
-  text-align: right;
+  justify-content: flex-end;
+  min-height: 3rem;
+  /* position: absolute; */
+  /* top: 0; */
+  /* left: 0; */
+  /* text-align: right; */
+}
+
+.explore-btn-cont {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 .hamburger-icon {
   width: 3rem;
   height: auto;
-  margin: 2rem;
+  /* margin: 3rem; */
+}
+
+.icon:hover {
+  transform: scale(1.2, 1.2);
+}
+
+.social-link-cont {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
 }
 
 @media screen and (min-width: 360px) {
   .page-title-cont {
-    /* display: flex;
-    flex-direction: column; */
   }
 
   .appointment-btn-cont {
