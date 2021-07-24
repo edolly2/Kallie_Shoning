@@ -22,3 +22,9 @@ $(document).ready(() => {
     }, 700);
   });
 });
+
+$(document).ready(function () {
+  $(".about-page").append(
+      "<ul class='circles'><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul>"
+  );
+}); 
