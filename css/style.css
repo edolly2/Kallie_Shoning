@@ -202,8 +202,11 @@ footer {
 }
 
 .icon {
+  min-width: 4rem;
+  height: auto;
   cursor: pointer;
 }
+
 
 .nav-menu-cont {
   /* background-color: green; */
@@ -273,11 +276,30 @@ footer {
 
 .up-arrow-icon {
   display: none;
+  margin-bottom: 2rem;
+  font-size: 4rem;
+
 }
+
+.up-arrow-icon:hover {
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+  color: var(--clr-primary);
+}
+
+.request-link li{
+  width: 75%;
+}
+
+.request-btn {
+  width: 100%;
+}
+
 
 .up-arrow-icon-cont {
   min-height: 4rem;
-  margin: 2rem;
+  margin-bottom: 2rem;
 }
 
 /* .ham-menu-icon-cont {
